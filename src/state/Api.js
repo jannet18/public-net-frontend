@@ -2,13 +2,16 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const Api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: process.env.REACT_APP_BASE_URL,
+    baseUrl: window.reactAppBaseUrl,
   }),
   reducerPath: "publicnetApi",
-  tagTypes: [],
+  tagTypes: ["Places"],
   endpoints: (build) => ({
     getPublicPlaces: build.query({
-      query: () => "/pu",
+      query: () => "api/v1/places",
+      providesTags: ["Places"],
     }),
   }),
 });
+
+export const { useGetPublicPlacesQuery } = Api;
