@@ -6,7 +6,7 @@ import Home from "./pages/Home.jsx";
 function App() {
   return (
     <>
-      <h1>hello</h1>
+      {/* <h1>hello</h1> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/places" element={<Places_list />} />
