@@ -30,7 +30,7 @@ const Places_list = () => {
           <table key={index}>
             <thead>
               <tr>
-                <th>Name</th>
+                <th className="">Name</th>
                 <th>City</th>
                 <th>Recent Upload Speed</th>
                 <th>Recent Upload Speed Units</th>
