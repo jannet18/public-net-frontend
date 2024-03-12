@@ -9,7 +9,8 @@ export const Api = createApi({
   endpoints: (build) => ({
     getPublicPlaces: build.query({
       query: (searchTerm = "") =>
-        `/v1/places${searchTerm ? `search=${searchTerm}` : ""}`,
+        // `/v1/places${searchTerm ? `search=${searchTerm}` : ""}`,
+        `v1/places?search_term=${searchTerm}`,
       providesTags: ["Places"],
     }),
   }),
