@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .loader {
+    display: "inline-block";
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: conic-gradient(rgba(1, 182, 190, 0.3) 0%, transparent 65%);
+  }
+}

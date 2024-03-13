@@ -1,6 +1,7 @@
 // import React, { useEffect, useMemo, useState } from "react";
 import { useState } from "react";
 import { useGetPublicPlacesQuery } from "../state/Api.js";
+import { Link } from "react-router-dom";
 // import { places } from "state/index.jsx";
 
 const Places_list = () => {
@@ -89,8 +90,9 @@ const Places_list = () => {
                 d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-
-            <span>New Log</span>
+            <Link to="/new">
+              <span>New Log</span>
+            </Link>
           </button>
         </div>
       </div>
@@ -118,6 +120,10 @@ const Places_list = () => {
             type="text"
             placeholder="Search"
             className="block w-full  py-1.5 pr-5 text-gray-700 bg-white border border-gray-200 rounded-lg md:w-80 placeholder-gray-400/70 pl-11 rtl:pr-11 rtl:pl-5 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+            // value={searchTerm}
+
+            onChange={handleSearchChange}
+            onClick={handleClick}
           />
         </div>
       </div>
