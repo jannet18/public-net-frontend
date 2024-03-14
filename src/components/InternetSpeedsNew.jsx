@@ -12,8 +12,10 @@ const InternetSpeedsNew = () => {
           </h1>
           <span className="before:content-[''] before:absolute inset-0 before:h-[0] before:w-[0] before:left-[calc(50% before:- before:8px)] before:border-[8px] before:border-[solid_transparent_0%]  before:border-t-[120px_solid_red] before:[filter:drop-shadow(0_0_12px_#01b6be)] relative mix-blend-multiply invisible inline-block w-[240px] h-[240px] rounded-[50%] bg-[conic-gradient(rgba(1,_182,_190,_0.3)_0%,_transparent_65%)] animate-[radarRotate_2s_linear]"></span>
           <div className="flex items-center justify-center flex-wrap">
-            <div className=""></div>
-            <button className="h-[240px] w-[240px] text-[18px] font-bold leading-6 rounded-full cursor-pointer bg-[#223140] text-[#eaeaea] border-0 [box-shadow:0_0_12px_#81ecec] absolute top-[18%]">
+            <div className="flex w-[100%] text-[64px] flex-col ml-[0] mr-[0] my-[12px]">
+              24 <small className="font-[40%]">Mbps</small>
+            </div>
+            <button className="before:content-[''] before:absolute before:h-[100%] before:w-[100%] before:top-[-2px] before:left-[-2px] before:border-[2px] before:border-solid before:border-[#7ed6d4] before:rounded-full before:animate-[btnRing_2s_linear] after:content-[''] after:absolute  after:h-[100%] after:w-[100%] after:top-[-1px] after:left-[-1px] after:bg-[linear-gradient(45deg,_#25476e_#c7ecee)] after:rounded-full after:z-[-1] h-[240px]  w-[240px] text-[18px] font-bold leading-6 rounded-full cursor-pointer bg-[#223140] text-[#eaeaea] border-0 [box-shadow:0_0_12px_#81ecec] absolute top-[18%] hover:bg-[#1f3c4e]">
               Check
             </button>
           </div>

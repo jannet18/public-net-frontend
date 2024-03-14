@@ -6,11 +6,23 @@
   .loader {
     animation: radarRotate 2s linear;
     filter: drop-shadow(0 0 12px #01b6be);
+    margin: 12px 0 32px 0;
   }
 }
 
 @keyframes radarRotate {
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes btnRing {
+  60%,
+  100% {
+    height: calc(100% + 60px);
+    width: calc(100% + 60px);
+    top: -32px;
+    left: -32px;
+    opacity: 0;
   }
 }
